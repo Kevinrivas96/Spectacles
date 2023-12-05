@@ -1,0 +1,614 @@
+@font-face {
+    font-family: Graphik;
+    src: url("./Fonts/GraphikCompact-Regular-Trial.otf");
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: rgb(179, 179, 179, .5);
+}
+
+body {
+    font-family: Graphik;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 100vw;
+    height: 90px;
+    background-color: rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all .2s ease-out;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+header div {
+    height: 40px;
+}
+
+header div img {
+    max-height: 100%;
+    filter: invert(1);
+}
+
+header nav menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav menu li {
+    list-style: none;
+    margin: 0 19px;
+    font-size: 18px;
+}
+
+header nav menu li a {
+    text-decoration: none;
+    color: #F0F1F2;
+}
+
+header nav menu li button {
+    font-size: 18px;
+    border: 1px solid #F0F1F2;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 20px;
+    word-spacing: 5px
+}
+
+header nav menu li a {
+    text-decoration: none;
+    color: #F0F1F2;
+}
+
+header nav menu li:not(:last-child) a:hover {
+    text-decoration: underline #FFF;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
+
+/* Masthead */
+
+.masthead-container {
+    background-image: url("./imgs/home-hero.webp");
+    background-size: cover;
+    height: 90vh;
+    max-width: 100vw;
+    top: 0;
+}
+
+.masthead {
+    background-color: rgba(0, 0, 0, 30%);
+    min-height: 100%;
+    width: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.overlay {
+    height: 40%;
+}
+
+
+.overlay div div {
+    width: 800px;
+}
+
+.overlay div h1 {
+    font-size: 52px;
+    text-align: center;
+    line-height: 64px;
+    letter-spacing: 2px;
+    margin: 0 140px;
+    color: #FFF;
+}
+
+.overlay div p {
+    color: #FFF;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+    font-family: Graphik;
+    text-wrap: wrap;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0 8% 0;
+}
+
+.btns button {
+    margin: 0 10px;
+    letter-spacing: 1px;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #F0F1F2;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+
+.btns button:first-child {
+    background-color: #F0F1F2;
+}
+
+.btns button:last-child {
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.btns button:first-child:hover {
+    cursor: pointer;
+}
+
+.btns button:last-child:hover {
+    background-color: #9E9E9E;
+    cursor: pointer;
+}
+
+/* Background Video Section */
+
+.video-background-container {
+    height: 85vh;
+}
+
+.video-background-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Product Container */
+
+.product-container {
+    background-image: url("./imgs/global_discover_DT_specs3_mineral.webp");
+    height: 120vh;
+    background-size: cover;
+    background-position: left;
+    transition: background-image 1s ease;
+}
+
+.product-container .content-area {
+    padding: 9% 83px;
+    display: flex;
+    flex-direction: column;
+    transition: color 1s ease;
+}
+
+.product-container .content-area div {
+    margin: 15px;
+}
+
+
+
+.product-container .caption p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.product-container .selection input {
+    cursor: pointer;
+}
+
+.product-container .selection label {
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+.product-container .selection {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.product-container #buynow {
+    border-color: #000;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.product-container #buynow:hover {
+    background-color: rgba(156, 156, 156, 0.2);
+}
+
+/* Page products */
+
+.masthead-container-product {
+    background-image: url("./imgs/newSpectacles.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #303030;
+    object-position: top;
+    height: 90vh;
+    max-width: 100vw;
+    top: 0;
+}
+
+.masthead-container-product .overlay div h1 {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFF;
+}
+
+.masthead-container-product .overlay div p {
+    text-align: center;
+}
+
+#product {
+    height: 90vh;
+    background-image: url("./imgs/Spectacles3Mineral.webp");
+    background-color: #e6cfaf;
+    background-size: contain;
+    background-position: center;
+    transition: background-image 1s ease;
+    display: flex;
+    align-items: end;
+    transition: all 1s ease;
+}
+
+#product .content-area {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Flexbox to show more products */
+
+.flexbox {
+    height: 70vh;
+    max-width: 100%;
+    display: flex;
+}
+
+.flexbox .box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.flexbox>div:first-child {
+    background-image: url("./imgs/Product_Module2_DT_Spec3CaseCable_Mineral@2x.webp");
+    background-size: cover;
+}
+
+.flexbox>div:last-child {
+    background-image: url("./imgs/Product_Module2_DT_3DViewer@2x.webp");
+    background-size: cover;
+}
+
+.background div div {
+    margin: 20px 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 50%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox button {
+    color: #FFF;
+}
+
+.flexbox button:hover {
+    background-color: rgb(179, 179, 179, .5);
+    cursor: pointer;
+}
+
+/* Contact Page */
+.masthead-contact {
+    height: 75vh;
+    max-width: 100vw;
+    background-image: url("./imgs/LearnBackground1.webp");
+    background-size: cover;
+    background-position: center;
+    background-color: #FFF;
+}
+
+.contact-container {
+    max-width: 100%;
+    text-align: left;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    padding-top: 2%;
+    padding-bottom: 10%;
+    background-color: #FFF;
+}
+
+.contact-container h1 {
+    margin: 30px;
+    text-align: center;
+}
+
+.contact-left h3 {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-box {
+    background-color: #FFF;
+    display: flex;
+    margin: 0 5%;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+}
+
+.contact-left {
+    flex-basis: 51%;
+    padding: 40px;
+}
+
+.contact-right {
+    flex: 40%;
+    padding: 40px 0 40px 40px;
+    background-color: #024082;
+    color: #FFF;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+.input-row .input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+.contact-box textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-box label {
+    margin-bottom: 6px;
+    display: block;
+    color: #024082;
+}
+
+.contact-box button {
+    font-weight: 400;
+    letter-spacing: 2px;
+    background-color: #024082;
+    width: 100px;
+    border: none;
+    color: #fff;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-right table tr td:first-child {
+    padding-right: 20px;
+}
+
+.contact-right table tr td {
+    padding-top: 20px;
+}
+
+/* About Page */
+
+.header {
+    filter: invert(1);
+    background-color: transparent;
+}
+
+.about-container {
+    height: 100vh;
+    max-width: 100vw;
+    background-color: rgb(255, 252, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-box {
+    height: 300px;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box div {
+    height: 100%;
+    width: 100%;
+}
+
+.about-text div:first-child {
+    padding-top: 20px;
+    height: auto;
+}
+
+.about-text div:last-child {
+    padding-top: 30px;
+}
+
+.about-text div p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    font-weight: lighter;
+
+    padding-right: 10%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.logos {
+    display: flex;
+}
+
+.logos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.logos img {
+    height: 35%;
+}
+
+.logos div:last-child img {
+    margin-left: -100px;
+}
+
+/* Footer */
+
+footer {
+    min-height: 360px;
+    background-color: #000;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+}
+
+footer .nav {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 60px 88px 0 110px;
+}
+
+footer .logo-container div input {
+    padding: 17px 70px;
+    padding-left: 8px;
+    letter-spacing: 1px;
+    border: none;
+    border-left: 2px solid #000;
+
+}
+
+footer .main ul li a,
+.secondary ul li:first-child a {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #FFF;
+    font-family: Graphik;
+    text-decoration: none;
+    line-height: 2;
+}
+
+footer .secondary ul li:not(:first-child) a {
+    font-size: 14px;
+    font-family: Graphik;
+    color: #9E9E9E;
+    text-decoration: none;
+    letter-spacing: .5px;
+    line-height: 2;
+    transition: all .3s ease;
+}
+
+footer .secondary ul li:not(:first-child) a:hover {
+    color: #FFF;
+}
+
+footer .logo-container {
+    width: 350px;
+}
+
+footer .logo-container div {
+    display: flex;
+}
+
+footer .logo-container h4 {
+    color: #fff;
+    font-family: Graphik;
+    font-size: 20px;
+    margin-top: 23%;
+    padding-bottom: 5px;
+}
+
+footer .logo-container div button {
+    background-color: rgb(255, 252, 0);
+    padding: 0 10px;
+    border: 1px solid rgb(255, 252, 0);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer .nav .main,
+footer .nav .secondary {
+    margin-top: -25px;
+}
+
+#footer {
+    position: relative;
+}
+
+
+@media (max-width: 970px) {}

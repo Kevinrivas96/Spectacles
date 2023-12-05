@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spectacles by Snap Inc.</title>
+    <meta name="description"
+        content="This lesson we will explore the steps that we can take to make sure that our CSS works on all different browsers.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- first let's add our reset.css. -->
+    <link rel="stylesheet" href="./reset.css">
+
+    <!-- Add our CSS file  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- FontAwesome  -->
+    <script src="https://kit.fontawesome.com/607b88049f.js" crossorigin="anonymous"></script>
+
+    <!-- Add our JavaScript -->
+    <script src="./app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="./imgs/Spectacles.png" alt="company-logo"></a>
+        </div>
+        <nav>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button><a href="product.html">Shop Now</a></button></li>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <section class="masthead-container">
+            <div class="masthead">
+                <div class="overlay">
+                    <div>
+                        <div>
+                            <h1>The Next Generation of Spectacles</h1>
+                        </div>
+                        <div>
+                            <p>
+                                Create the world you want to see with Spectacles — our first pair of glasses that bring
+                                augmented reality to life, redefining how we interact with and overlay computing on the
+                                world.
+                            </p>
+                        </div>
+                        <div class="btns">
+                            <button class="btn">Learn More</button>
+                            <button class="btn">Creator Form</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-background-container">
+            <video autoplay loop muted
+                poster="https://storage.googleapis.com/spectacles-v3/NzVlNzU3OWQtY2U2Ny00OGQ3LTljMGEtMGU4MmQ2ZDY0NDcx/home/home-creators.webp">
+                <source src="./videos/home-creators_1_optimized.mp4" type="video/mp4">
+            </video>
+        </section>
+
+
+        <section class="product-container">
+            <div class="content-area">
+                <div class="product-title">
+                    <h2>Spectacles 3</h2>
+                </div>
+                <div class="caption">
+                    <p>Capture your world in 3D. <br>
+                        Relive it with your 3D Viewer.
+                    </p>
+                </div>
+                <div class="selection">
+                    <label for="carbon">Carbon</label>
+                    <input type="radio" name="group" id="carbon">
+                    <label for="mineral">Mineral</label>
+                    <input type="radio" name="group" id="mineral" checked>
+                </div>
+                <div><button class="btn" id="buynow">Buy Now</button></div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="nav">
+            <div class="logo-container">
+                <img class="logo" src="./imgs/logo-wordmark-white.svg" alt="Spectacles Logo" width="127px"
+                    height="27px">
+
+                <h4>Subscribe now and get 10% OFF</h4>
+                <div>
+                    <button>Sign Up</button>
+                    <div>
+                        <label for="Subscribe">
+                            <input type="email" name="Subscribe" placeholder="Email Address">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="secondary">
+                <ul>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="index.html">Compatibility</a></li>
+                    <li><a href="index.html">Returns</a></li>
+                    <li><a href="index.html">Warranty</a></li>
+                    <li><a href="index.html">Business
+                            Inquiries</a></li>
+                    <li><a href="index.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spectacles by Snap Inc.</title>
+    <meta name="description"
+        content="This lesson we will explore the steps that we can take to make sure that our CSS works on all different browsers.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- first let's add our reset.css. -->
+    <link rel="stylesheet" href="./reset.css">
+
+    <!-- Add our CSS file  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- FontAwesome  -->
+    <script src="https://kit.fontawesome.com/607b88049f.js" crossorigin="anonymous"></script>
+
+    <!-- Add our JavaScript -->
+    <script src="./app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="./imgs/Spectacles.png" alt="company-logo"></a>
+        </div>
+        <nav>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button><a href="product.html">Shop Now</a></button></li>
+            </menu>
+        </nav>
+    </header>
+    <main>
+
+        <section class="masthead-contact"></section>
+
+        <section class="contact-container">
+            <h1>Connect with us</h1>
+            <p>We would love to respond to your queries and help you succeed. Feel free to get in touch with us.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send you request</h3>
+                    <form action="#">
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="">Name</label>
+                                <input type="text" placeholder="Name">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="">Phone</label>
+                                <input type="tel" placeholder="705-123-4567">
+                            </div>
+
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label for="">Subject</label>
+                                <input type="text" placeholder="write subject">
+                            </div>
+                        </div>
+
+                        <label for="">Message</label>
+                        <textarea rows="5" placeholder="write a request"></textarea>
+
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+
+                <!-- company info -->
+                <div class="contact-right">
+                    <h3>Reach us</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>spectacles@snap.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>Phone:</td>
+                            <td>1 800 777 9999 </td>
+                        </tr>
+
+                        <tr>
+                            <td>Address:</td>
+                            <td>Santa Monica, 2772 Donald Douglas Loop N, United States</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+
+        <div class="nav">
+            <div class="logo-container">
+                <img class="logo" src="./imgs/logo-wordmark-white.svg" alt="Spectacles Logo" width="127px"
+                    height="27px">
+
+                <h4>Subscribe now and get 10% OFF</h4>
+                <div>
+                    <button>Sign Up</button>
+                    <div>
+                        <label for="Subscribe">
+                            <input type="email" name="Subscribe" placeholder="Email Address">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="secondary">
+                <ul>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="index.html">Compatibility</a></li>
+                    <li><a href="index.html">Returns</a></li>
+                    <li><a href="index.html">Warranty</a></li>
+                    <li><a href="index.html">Business
+                            Inquiries</a></li>
+                    <li><a href="index.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
