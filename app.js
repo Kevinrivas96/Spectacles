@@ -45,20 +45,59 @@ document.addEventListener("DOMContentLoaded", function () {
             text.style.color = "#000";
             btn.style.borderColor = "#000";
             btn.style.color = "#000";
-            product.style.backgroundImage = 'url("./imgs/Spectacles3Mineral.webp")';
-            product.style.backgroundColor = "#e6cfaf";
+            if (product) {
+                product.style.backgroundImage = 'url("./imgs/Spectacles3Mineral.webp")';
+                product.style.backgroundColor = "#e6cfaf";
+            }
+            mobile();
 
         } else {
             container.style.backgroundImage = 'url("./imgs/global_discover_DT_specs3_carbon.webp")';
             text.style.color = "#FFF";
             btn.style.borderColor = "#FFF";
             btn.style.color = "#FFF";
-            product.style.backgroundImage = 'url("./imgs/Spectacles3Carbon.webp")';
-            product.style.backgroundColor = "#303030";
+            if (product) {
+                product.style.backgroundImage = 'url("./imgs/Spectacles3Carbon.webp")';
+                product.style.backgroundColor = "#303030";
+            }
+            mobile();
         }
     }
 
     mineralOption.addEventListener("click", checkOption);
     carbonOption.addEventListener("click", checkOption);
 
+    function mobile() {
+        var browserWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        if (browserWidth <= 970 && mineralOption.checked) {
+            container.style.backgroundImage = 'url("./imgs/global_discover_mobile_specs3_mineral.webp")';
+            if (product) {
+                product.style.backgroundImage = 'url("./imgs/Spectacles3Mineral.webp")';
+                product.style.backgroundColor = "#e6cfaf";
+            }
+        } else if (browserWidth <= 970 && carbonOption.checked) {
+            container.style.backgroundImage = 'url("./imgs/global_discover_mobile_specs3_carbon.webp")';
+            if (product) {
+                product.style.backgroundImage = 'url("./imgs/Spectacles3Carbon.webp")';
+                product.style.backgroundColor = "#303030";
+            }
+        } else if (browserWidth > 970 && mineralOption.checked) {
+            container.style.backgroundImage = 'url("./imgs/global_discover_DT_specs3_mineral.webp")';
+            if (product) {
+                product.style.backgroundImage = 'url("./imgs/Spectacles3Mineral.webp")';
+                product.style.backgroundColor = "#e6cfaf";
+            }
+        } else if (browserWidth > 970 && carbonOption.checked) {
+            container.style.backgroundImage = 'url("./imgs/global_discover_DT_specs3_carbon.webp")';
+            if (product) {
+                product.style.backgroundImage = 'url("./imgs/Spectacles3Carbon.webp")';
+                product.style.backgroundColor = "#303030";
+            }
+        }
+
+        console.log(browserWidth);
+    }
+
+    window.addEventListener("resize", mobile);
 });
